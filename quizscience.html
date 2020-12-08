@@ -2,57 +2,85 @@
 <html>
 
 <head>
-    <meta lang="fr">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>admin</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--link-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="stylequiz.css">
+  <meta lang="fr">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>admin</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--link-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="stylequiz.css">
 </head>
 
 <body>
 
-    <div class="container">
-        <div id="quiz">
-          <h1><strong>Quiz</strong> scientifiques</h1>
-    
-          <h2 id="question"></h2>
-            
-          <h3 id="score"></h3>
-    
-          <div class="choices">
-            <button id="guess0" class="btn">        
+  <!--NAVIGATION-->
+
+  <div class="topnav" id="myTopnav">
+    <nav>
+    <div><a href="index.html" class="hover-this"><span>Home</span></a></div>
+    <div><a href="quizscience.html" class="hover-this"><span>QUIZ Sciences</span></a></div>
+    <div><a href="index2.html" class="hover-this"><span>Quiz Mathématique</span></a></div>
+    <div><a href="index3.html" class="hover-this"><span>Quiz Astrologie</span></a></div>
+    <div class="cursor"></div>
+  </nav>
+
+
+
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+
+  <div class="container">
+    <div id="quiz">
+      <h1><strong>Quiz</strong> scientifiques</h1>
+      <h2 id="question"></h2>
+      <h3 id="score"></h3>
+      <a id="niveau" href="#"><span></span></a>
+
+      <div id="choix" class="choices">
+        <div class="row">
+          <div class="col-md-6 col-xs-12">
+            <button id="guess0" class="btn">
               <p id="choice0"></p>
             </button>
-    
+          </div>
+          <div class="col-md-6 col-xs-12">
             <button id="guess1" class="btn">
               <p id="choice1"></p>
             </button>
-              
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-xs-12">
             <button id="guess2" class="btn">
               <p id="choice2"></p>
             </button>
-              
+          </div>
+
+          <div class="col-md-6 col-xs-12">
             <button id="guess3" class="btn">
               <p id="choice3"></p>
             </button>
           </div>
-    
-          <p id="progress"></p>
-    
         </div>
       </div>
+      <p id="progress"></p>
+    </div>
+  </div>
 
-
-
-
-
-
-
-
+  
 </body>
 
 <!-- Bootstrap core JS-->
@@ -66,4 +94,5 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <script src="assets/app.js"></script>
+
 </html>

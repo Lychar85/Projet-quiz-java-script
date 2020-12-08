@@ -1,58 +1,143 @@
 body {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    min-height: 100vh;
-    background: #1f1f1f;
-    color: #ffffff;
-  }
-  body h1 {
-    margin-bottom: 3rem;
-    text-transform: uppercase;
-    font-size: 3rem;
-  }
-  body h1 span, body h1 i {
-    color: #feb916;
-  }
-  body h3 {
-    color: #feb916;
-    font-size: 1.5rem;
-  }
-  body .container .choices {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 3rem auto 3rem;
-    width: 500px;
-  }
-  body .container .choices button {
-    flex: 1 0 45%;
-    width: 200px;
-    height: 80px;
-    border-radius: 5px;
-    cursor: pointer;
-    border: none;
-    margin: 0.4rem;
-    outline: none;
-    background: #dfe4ea;
-    user-select: none;
-    font-weight: 600;
-  }
-  body .container .choices button:hover {
-    background: #feb916;
-    transition: 0.5s;
-  }
-  body .container .choices button:active {
-    transform: scale(0.9);
-    transition: transform 0.1s;
-  }
-  body .container .choices button p {
-    font-size: 1.3rem;
-  }
-  body #progress {
-    font-size: 1.3rem;
-    color: #feb916;
+  align-items: center;
+  justify-items: center;
+  min-height: 100vh;
+  background: #1f1f1f;
+  color: #ffffff;
+}
+
+h1 {
+  margin-top: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+h1 span,
+h1 i {
+  color: #feb916;
+}
+
+h3 {
+  margin-top: 25px;
+  text-align: center;
+  color: #feb916;
+  font-size: 1.5rem;
+}
+
+.container .choices {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3rem auto 3rem;
+  width: 500px;
+}
+
+.container .choices button {
+  flex: 1 0 45%;
+  width: 200px;
+  height: 80px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  margin: 0.4rem;
+  outline: none;
+  background: #dfe4ea;
+  user-select: none;
+  font-weight: 600;
+}
+
+.container .choices button:hover {
+  background: #feb916;
+  transition: 0.5s;
+}
+
+.container .choices button:active {
+  transform: scale(0.9);
+  transition: transform 0.1s;
+}
+
+.container .choices button p {
+  font-size: 1.3rem;
+}
+
+#question{
+  margin-top: 100px;
+  text-align: center;
+}
+
+#niveau{
+  color: #ffffff;
+  font-size: 250%;
+  text-align: center;
+}
+#progress {
+  font-size: 1.3rem;
+  color: #feb916;
+  text-align: center;
+}
+
+strong {
+  color: #0fc8ff;
+}
+
+/*topnav header
+======================================*/
+
+.topnav {
+  overflow: hidden;
+  background-color: #feb916;
+}
+
+.topnav a {
+  display: block;
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px 30px;
+  font-size: 18px;
+  text-decoration: none;
+  border-left: 3px solid #ffffff;
+  transform: translateZ(0);
+  transition-duration: .3s;
+  transition-property: transform;
+}
+
+.topnav a:hover,
+.topnav a.active,
+.topnav a:focus {
+  transform: translateY(-5px);
+}
+
+.topnav a:hover:before,
+.topnav a:active:before,
+.topnav a:focus:before {
+  opacity: 1;
+  transform: translateY(-5px);
+}
+
+
+@media screen and (max-width: 900px) {
+
+  .topnav {
+    background-color: rgb(46, 46, 46);
   }
 
-  strong{
-    color: #0fc8ff;
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+
+  @media screen and (max-width: 900px) {
+    .topnav.responsive {
+      position: relative;
+    }
+
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: center;
+      white-space: nowrap;
+    }
+  }
 }
+

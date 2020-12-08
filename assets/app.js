@@ -68,11 +68,17 @@ const display = {
         let element = document.getElementById(id);
         element.innerHTML = text;
     },
+
     endQuiz: function () {
         let endQuizHTML = `
         <h1>Quiz terminé !</h1>
         <h3>Votre score est de ${quiz.score} / ${quiz.questions.length}</h3>`;
         this.elementShown("question", endQuizHTML);
+        let niveauQuizHTML = `
+        Niveau suivant`;
+        this.elementShown("niveau",niveauQuizHTML);
+        let choix = ` `;
+        this.elementShown("choix",choix)
     },
     question: function () {
         this.elementShown("question", quiz.getCurrentQuestion().text);
@@ -114,5 +120,3 @@ quizapp = function () {
 
 let quiz = new Quiz(questions)
 quizapp()
-
-console.log(quiz);

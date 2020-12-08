@@ -90,12 +90,9 @@ strong{
 ========================*/
 .Quiz{
     margin-bottom: 500px;
+
 }
 
-.choixquiz{
-    display: flex;
-    justify-content: center;
-}
 
 .Quiz ul{
     list-style-type: none;
