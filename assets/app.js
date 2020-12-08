@@ -1,3 +1,4 @@
+
 class Question {
     constructor(text, choices, answer) {
         this.text = text;
@@ -10,6 +11,9 @@ class Question {
 
     }
 }
+
+//Question
+
 
 let questions = [
     new Question(
