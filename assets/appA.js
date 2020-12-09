@@ -17,27 +17,45 @@ class Question {
 
 let questions = [
     new Question(
-        "Qu’est-ce qu’une molécule ?",
-        ["Un assemblage d’atomes", "Un assemblage de cellules", "Le plus petit des éléments", "Le noyau de l’atome"],
-        "Un assemblage d’atomes",
+        "En quelle année fut lancée la sonde Voyager 1 ?",
+        ["1975", "1977", "1979", "1981"],
+        "1977",
     ),
 
     new Question(
-        "Le volt est l’unité de",
-        ["courant électrique", "tension électrique", "résistance électrique", "capacité d'une batterie"],
-        "tension électrique",
+        "Que représente une unité astronomique (UA) ?",
+        ["La distance entre le Soleil et l’étoile la plus proche de celui-ci", "La distance Soleil-Pluton", "La distance Terre-Soleil", "La distance Terre-Mars"],
+        "La distance Terre-Soleil",
     ),
 
     new Question(
-        "A la température de 15 °C, à quelle vitesse atteint-on le mur du son ?",
-        ["924 Km/h", "1024 Km/h", "1124 Km/h", "1224 Km/h"],
-        "1224 Km/h",
+        "Quelle est la galaxie la plus proche de la nôtre ?",
+        ["Sagittaire", "Andromède", "Phœnix", "Vierge"],
+        "Andromède",
     ),
 
     new Question(
-        "Quel est le nom de l’unité de résistance électrique ?",
-        ["Ohm", "Ampère", "Watt", "Volt"],
-        "Ohm",
+        "Comment appelle t-on les voyageurs spatiaux européens ?",
+        ["Les astronautes", "Les spationautes", "Les cosmonautes", "Les taïkonautes"],
+        "Les cosmonautes",
+    ),
+
+    new Question(
+        "Combien parcoure-t-on de km en 1 seconde à la vitesse de la lumière ?",
+        ["3000 km/sec", "30 000 km/sec", "300 000 km/sec", "3 000 000 km/sec"],
+        "300 000 km/sec",
+    ),
+
+    new Question(
+        "Comment se nomme notre Galaxie ?",
+        ["Andromède", "Orion", "La Voie Lactée", "Vénus"],
+        "La Voie Lactée",
+    ),
+
+    new Question(
+        "Quelles sont les deux plus grosses planètes du système solaire ?",
+        ["Jupiter et Vénus", "Pluton et Uranus", "Mars et Mercure", "Jupiter et Saturne"],
+        "Jupiter et Saturne",
     ),
 ];
 
