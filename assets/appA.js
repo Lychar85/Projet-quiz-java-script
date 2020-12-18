@@ -138,3 +138,10 @@ quizapp = function () {
 
 let quiz = new Quiz(questions)
 quizapp()
+
+
+
+
+
+
+
