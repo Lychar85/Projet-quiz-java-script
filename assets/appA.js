@@ -14,7 +14,6 @@ class Question {
 
 //Question
 
-
 let questions = [
     new Question(
         "En quelle année fut lancée la sonde Voyager 1 ?",

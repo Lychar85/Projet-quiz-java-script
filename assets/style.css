@@ -1,6 +1,7 @@
 body{
     background-color: #1f1f1f;
     color: #ffffff;
+    
 }
 
 
@@ -67,23 +68,88 @@ body{
 }
 /*header
 ============================*/
-
-
 header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 799px;
+  background: url("img/header.jpg") no-repeat center;
+}
+
+
+.header{
+  margin-top: 100px;
     display: flex;
     justify-content: center;
-    background: url(img/header.jpg) no-repeat;
-    height: 1000px;
+    align-items: center;
+   
 }
 
 .title-header{
-    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: 700%;
-    color: #feb916;   
+    color: #0fc8ff;
 }
 
 strong{
-    color: #0fc8ff;
+  color: #feb916; 
+    
+}
+
+/*navigation------------*/
+.listLink{
+  margin-top: 100px;
+}
+
+.link{
+  font-size:40px;
+  color: #fff;
+  background-color: #feb916;
+  padding: 50px 100px 50px 100px;
+  border-radius: 20px;
+  width: 50px;
+  position: relative;
+}
+
+link::before, link::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  border: 2px solid yellow;
+  transition: all 0.25s ease-out;
+}
+link::before {
+  background-color: yellow;
+  top: -15px;
+  left: -15px;
+}
+link::after {
+  bottom: -15px;
+  right: -15px;
+}
+link:hover::before {
+  top: 15px;
+  left: 15px;
+}
+link:hover::after {
+  bottom: 15px;
+  right: 15px;
+}
+
+
+.link-astro, .link-math{
+  top: 150px;
+}
+.link-astro{
+  right: 100px;
+}
+.link-math{
+  left:100px;
 }
 
 /*Quiz
@@ -106,3 +172,14 @@ strong{
     
     color: #feb916;
 }
+
+
+
+
+
+
+
+
+
+
+

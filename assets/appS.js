@@ -13,8 +13,6 @@ class Question {
 }
 
 //Question
-
-
 let questions = [
     new Question(
         "Qu’est-ce qu’une molécule ?",
